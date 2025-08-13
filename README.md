@@ -47,7 +47,7 @@ python -m cellpose --dir Analysis_folder --pretrained_model cyto2 --diameter 100
 
 ### Running the Analysis
 1. Open ImageJ/Fiji
-2. Load the macro file (`central-nuclei-muscle-analyzer_v1(24c).ijm`)
+2. Load the macro file (`central-nuclei-muscle-analyzer_v1.ijm`)
 3. Run the macro and set parameters in the dialog
 4. Select input and output directories
 5. The macro will process all images automatically

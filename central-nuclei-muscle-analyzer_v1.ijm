@@ -92,13 +92,13 @@ for (f=0;f<Num_Files;f++){
 		Ext.CLIJ2_pull(input_filtered);
 		scale_calibration();
 		run("glasbey_on_dark");
-		roiManager("save", Result_Output + Main_File_Name + "_ROI_CSA.zip");
+		roiManager("save", Result_Output + File.separator + Main_File_Name + "_ROI_CSA.zip");
 		Cell_Count = roiManager("count");
 		roiManager("reset");
 
 		Ext.CLIJ2_erodeLabels(input_filtered, center_label, Erode_Number_radius, 0);
 		Ext.CLIJ2_pullLabelsToROIManager(center_label);
-		roiManager("save", Result_Output + Main_File_Name + "_ROI_Center.zip");
+		roiManager("save", Result_Output+ File.separator + Main_File_Name + "_ROI_Center.zip");
 
 		Ext.CLIJ2_release(input_filtered);
 		Ext.CLIJ2_pull(center_label);
@@ -148,7 +148,7 @@ for (f=0;f<Num_Files;f++){
 		scale_calibration();
 		
 		run("Select None");
-		saveAs("tif", Result_Output + Main_File_Name2 + "_Nuclei");
+		saveAs("tif", Result_Output + File.separator + Main_File_Name2 + "_Nuclei");
 		roiManager("show all with labels");
 		roiManager("measure");
 		//saveAs("Results", Result_Output + Main_File_Name2 +"_center_nuclei.csv");
@@ -220,9 +220,9 @@ for (f=0;f<Num_Files;f++){
 
 		//export final results for each image
 		run("Line Width...", "line=1");
-		roiManager("save", Result_Output + Main_File_Name2 + "_ROI_Classify.zip");
+		roiManager("save", Result_Output + File.separator + Main_File_Name2 + "_ROI_Classify.zip");
 		run("Select None");
-		saveAs("tif", Result_Output + Main_File_Name2 +"_Classified");
+		saveAs("tif", Result_Output + File.separator + Main_File_Name2 +"_Classified");
 
 		run("Clear Results");
 		selectWindow(File_Name2);
@@ -230,7 +230,7 @@ for (f=0;f<Num_Files;f++){
 		
 		roiManager("deselect");
 		roiManager("measure");
-		saveAs("Results", Result_Output + Main_File_Name2 + "_Summary.csv");
+		saveAs("Results", Result_Output + File.separator  + Main_File_Name2 + "_Summary.csv");
 		
 		//Arrays for store the information of each image
 		Label_array[array_count] = File_Name2;
@@ -260,4 +260,4 @@ for (i = 0; i < array_count+1; i++) {
 	setResult("Abnormal_Cells", i, Abnormal_Cell_Count_array[i]);
 	setResult("Normal_cells", i, Normal_Cell_Count_array[i]);
 }
-saveAs("Results", Result_Output + "Result_Summary.csv");
+saveAs("Results", Result_Output + File.separator + "Result_Summary.csv");

@@ -30,9 +30,10 @@ This tool performs automated detection and classification of muscle fibers based
 
 ### Cellpose Command example
 ```bash
-python -m cellpose --dir Analysis_folder --pretrained_model cyto2 --diameter 100. --verbose --save_png --no_npy
+mamba activate cellpose
+python -m cellpose --dir . --pretrained_model cyto3 --diameter 100. --verbose --save_png --no_npy
 ```
-**Note**: Cyto2 or Cyto3 models work well, but CPSAM is not recommended for the sample image.
+**Note**: Cyto3 or Cyto2 models work well, but CPSAM is not recommended for the sample image.
 
 ## Usage
 

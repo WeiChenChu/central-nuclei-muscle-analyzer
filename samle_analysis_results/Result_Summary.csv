@@ -1,0 +1,5 @@
+ ,Label,Total_Cells,Abnormal_Cells,Normal_cells
+1,sample_img_01.tif,46,35,11
+2,sample_img_02.tif,35,29,6
+3,sample_img_03.tif,35,12,23
+4,sample_img_04.tif,29,13,16

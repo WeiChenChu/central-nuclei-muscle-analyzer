@@ -28,12 +28,23 @@ This tool performs automated detection and classification of muscle fibers based
 1. **Original images**: H&E stained muscle cross-sections (`.tif` or `.jpg` format)
 2. **Mask generation**: Use Cellpose to generate segmentation masks
 
-### Cellpose Command example
+
+### Cellpose Batch Command Example (Process Entire Folder)
+
 ```bash
-mamba activate cellpose
 python -m cellpose --dir . --pretrained_model cyto3 --diameter 100. --verbose --save_png --no_npy
 ```
-**Note**: Cyto3 or Cyto2 models work well, but CPSAM is not recommended for the sample image.
+
+**Notes**:  
+- The `cyto3` or `cyto2` models generally perform well.  
+- The `CPSAM` model is **not recommended** for the sample images provided.  
+
+**Cellpose Installation**:  
+- Official repository: [MouseLand/cellpose](https://github.com/MouseLand/cellpose)  
+- To install a specific (older) version:  
+  ```bash
+  pip install "cellpose[gui]==3.1.1.2"
+  ```
 
 ## Usage
 

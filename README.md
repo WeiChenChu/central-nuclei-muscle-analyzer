@@ -19,7 +19,7 @@ This tool performs automated detection and classification of muscle fibers based
 
 ### Required Software and Plugins
 - **Cellpose** for muscle-crossal section segmentation
-- **Fiji** (latest version recommended)
+- **Fiji** 
 - **CLIJ/CLIJ2** plugin for ImageJ
 
 ## Input Requirements
@@ -71,7 +71,7 @@ For each processed image, the following files are generated:
 ### ROI Files
 - `*_ROI_CSA.zip`: Complete muscle fiber regions
 - `*_ROI_Center.zip`: Central regions of muscle fibers
-- `*_ROI_Classify.zip`: Classified ROIs (normal/abnormal)
+- `*_ROI_Classify.zip`: Classified ROIs (Green: Normal / Red: Abnormal)
 
 ### Images
 - `*_Nuclei.tif`: Nuclear detection mask
@@ -83,18 +83,17 @@ For each processed image, the following files are generated:
 - `*_Summary.csv`: Detailed measurements for each fiber
 - `Result_Summary.csv`: Overall summary statistics
 
-## Algorithm Workflow
+## Workflow
 
 1. **Preprocessing**: Load Cellpose masks and apply size/edge filters
-2. **Fiber Detection**: Extract muscle fiber ROIs using CLIJ2
-3. **Central Region Definition**: Erode fiber boundaries to define central areas
-4. **Nuclear Detection**: 
+2. **Central Region Definition**: Erode fiber boundaries to define central areas
+3. **Nuclear Detection**: 
    - Color deconvolution (H&E separation)
    - Difference of Gaussian filtering
    - Thresholding and mask creation
-5. **Classification**: Determine if nuclei are present in central regions
-6. **Visualization**: Generate color-coded output images
-7. **Export**: Save ROIs, measurements, and summary statistics
+4. **Classification**: Determine if nuclei are present in central regions
+5. **Visualization**: Generate color-coded output images
+6. **Export**: Save ROIs, measurements, and summary statistics
 
 ## Technical Details
 

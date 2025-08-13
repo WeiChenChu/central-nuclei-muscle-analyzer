@@ -1,11 +1,10 @@
 # central-nuclei-muscle-analyzer
-![workflow](/workflow_overview/Workflow_HereIM.jpg)
-
 A comprehensive ImageJ macro for automated analysis of nuclear localization in muscle cross-sectional areas, specifically designed to identify and quantify central nuclei in muscle fibers.
 
 ## Overview
-
 This tool performs automated detection and classification of muscle fibers based on nuclear positioning, distinguishing between normal (peripheral nuclei) and abnormal (central nuclei) muscle fibers. It's particularly useful for studying muscle pathology and regeneration.
+
+![workflow](/workflow_overview/Workflow_HereIM.jpg)
 
 ## Features
 

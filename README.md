@@ -1,4 +1,5 @@
 # central-nuclei-muscle-analyzer
+![workflow](/workflow_overview/Workflow_HereIM.jpg)
 
 A comprehensive ImageJ macro for automated analysis of nuclear localization in muscle cross-sectional areas, specifically designed to identify and quantify central nuclei in muscle fibers.
 

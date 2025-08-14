@@ -4,7 +4,7 @@ A comprehensive ImageJ macro for automated analysis of nuclear localization in m
 ## Overview
 This tool performs automated detection and classification of muscle fibers based on nuclear positioning, distinguishing between normal (peripheral nuclei) and abnormal (central nuclei) muscle fibers. It's particularly useful for studying muscle pathology and regeneration.
 
-![workflow](/workflow_overview/Workflow_HereIM.jpg)
+![workflow](/workflow_overview/workflow_overview.jpg)
 
 ## Features
 

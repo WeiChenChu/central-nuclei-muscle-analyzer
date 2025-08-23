@@ -3,7 +3,7 @@
   
   ImageJ macro written by Wei-Chen CHU
   Imaging Core Facility, ICOB, Academia Sinica
-  Last updated: 2025/08/13
+  Last updated: 2025/08/23
   
   Input file: raw imag mask.png generated from cellpose
   
@@ -25,7 +25,7 @@
 #@ Double(label = "Pixel_scale_y", value=0.27816504240036) scale_Y
 #@ Integer(label = "CSA minimum size in pixel", value=2000) CSA_minimum_size
 #@ Integer(label = "CSA maximum size in pixel", value=9999999) CSA_maximum_size
-#@ Integer(label = "CSA edge-to-center distance", value=15) Erode_Number_radius
+#@ Integer(label = "Nuclei-to-CSA edge distance threshold", value=15) Erode_Number_radius
 #@ Integer(label = "Drawing line width", value = 5) line_width
 
 

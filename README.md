@@ -47,6 +47,8 @@ python -m cellpose --dir . --pretrained_model cyto3 --diameter 100. --verbose --
   ```
 
 ## Usage
+![GUI](/workflow_overview/GUI.png)
+
 
 ### Parameters
 - **Format**: Choose between `.tif` or `.jpg` for input images

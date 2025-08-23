@@ -54,7 +54,7 @@ python -m cellpose --dir . --pretrained_model cyto3 --diameter 100. --verbose --
 - **Output Folder**: Directory for results
 - **Pixel Scale X/Y**: Calibration values for spatial measurements
 - **CSA Size Range**: Minimum and maximum cross-sectional area in pixels
-- **Edge-to-center Distance**: Erosion radius for defining central region
+- **Nuclei-to-CSA edge distance threshold**: The minimum distance from nuclei to the CSA edge, used as the erosion radius to define the central region for abnormal nuclei detection.
 - **Line Width**: Width for visualization overlays
 
 ### Running the Analysis
